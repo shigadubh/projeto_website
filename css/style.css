@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /** 
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  **/
+  overflow: hidden;
+}
+
+.links {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  display: flex;
+  background-color: white;
+  font-family: 'Noto Serif Display', serif;
+}
+
+.links h1 {
+  padding: 6px;
+  padding-left: 300px;
+}
+
+.links label {
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: .4s;
+  text-align: center;
+  font-size: 100%;
+}
+
+.links label:hover {
+  background-color: rgb(224, 216, 216);
+}
+
+.scroll input {
+  display: none;
+}
+
+.scroll {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sections {
+  transition: all .4s;
+}
+
+.block {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+#home {
+  background-color: rgb(250, 235, 212);
+  align-items: center;
+}
+
+#home img {
+  width: 100%;
+  height: 100%;
+}
+
+#home h1{
+  font-size: 2rem;
+  font-weight: 200;
+  position: absolute;
+}
+
+#menu {
+  background-color: rgb(226, 205, 183);
+}
+
+#sobre {
+  background-color: #5a4831;
+}
+
+#sobre img {
+  height: 300px;
+  width: 300px;
+}
+
+#sobre figure {
+  margin-left: 10vh;
+  margin-top: 20vh;
+  height: 300px;
+  width: 700px;
+  display: flex;
+  align-items: center;
+}
+
+#sobre figcaption {
+  font-family: 'Noto Serif Display', serif;
+  padding-left: 15px;
+}
+
+#contato {
+  background-color: #1B1A17;
+
+}
+
+#rd_contato:checked~.sections {
+  margin-top: -300vh;
+}
+
+#rd_sobre:checked~.sections {
+  margin-top: -200vh;
+}
+
+#rd_menu:checked~.sections {
+  margin-top: -100vh;
+}
+
+.container {
+  margin-left: 50px;
+}
+
+.container i {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.container iframe {
+  padding-top: 10vh;
+}
